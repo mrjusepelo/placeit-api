@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  url_image: MyString
+  presentation_days: 1
+  start_date: 2019-12-30
+  end_date: 2019-12-30
+
+two:
+  name: MyString
+  description: MyText
+  url_image: MyString
+  presentation_days: 1
+  start_date: 2019-12-30
+  end_date: 2019-12-30
