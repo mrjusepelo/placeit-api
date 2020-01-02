@@ -11,7 +11,7 @@ class MoviesController < ApplicationController
       render status: 200, json: { movie: movie, message: 'Película creada correctamente' }
     else
       errors = movie.errors.full_messages.to_sentence
-      render status: 412, json: { message: errors }
+      render status: 422, json: { message: errors }
     end
   end
 

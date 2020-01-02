@@ -6,7 +6,7 @@ class ReservesController < ApplicationController
       render status: 200, json: { data: reserve, message: 'Reserva creada correctamente' }
     else
       errors = reserve.errors.full_messages.to_sentence
-      render status: 411, json: { message: errors }
+      render status: 422, json: { message: errors }
     end
   end
 
