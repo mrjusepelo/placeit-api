@@ -7,7 +7,7 @@ class Movie < ApplicationRecord
   def self.search_by_dates(start_date, end_date)
     start_date = Date.today if start_date.blank?
     end_date = start_date if end_date.blank?
-    where('start_date >= ? AND end_date <= ?', start_date.to_date, end_date.to_date)
+    where('start_date >= ? AND end_date >= ?', start_date.to_date, end_date.to_date)
   end
 
   def valid_reservate_date?(date)
